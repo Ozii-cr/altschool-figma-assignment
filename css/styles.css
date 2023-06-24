@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'Gilroy-Bold ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Bold ☞'), url('assets/gilory/Gilroy-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Heavy ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Heavy ☞'), url('assets/gilory/Gilroy-Heavy.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Light ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Light ☞'), url('assets/gilory/Gilroy-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Medium ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Medium ☞'), url('assets/gilory/Gilroy-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Regular ☞';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Regular ☞'), url('assets/gilory/Gilroy-Regular.woff') format('woff');
+    }
+
+    /* CSS Variables */
+   :root {
+
+    --primary-color: #005AE2;
+    --main-color: #141414;
+    
+     }
+
+     
+    html {
+        scroll-behavior: smooth;
+      }
+
+    body {
+        font-family: "Gilroy-Regular ☞";
+        color: var(--main-color);
+       
+
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .nav-item {
+        margin-left: 2rem;
+      }
+
+      ul li {
+        list-style-type: none;
+      }
+      
+      a {
+        text-decoration: none;
+        color: var(--main-color);
+      }
+      
+      a:hover {
+        color: blueviolet;
+      } 
+
+    
+
+      nav {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 10%;
+    
+      }
+      /* To make texts Blue */
+      .blueText{
+        color: var(--primary-color);
+
+      }
+      .whiteText{
+        color: white;
+
+      }
+
+      .login{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      /* To style the try for free button */
+      .BlueButton{
+        
+        background-color:var(--primary-color) ;
+        border: none;
+        padding: 12px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 30px;
+        border-radius: 100px;
+      }
+
+    .BlueButton a{
+        color: white;
+
+    }
+
+    .Hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HeroHeader{
+       
+        width: 948px;
+        height: 200px;
+        font-family: 'Gilroy-Bold ☞';
+        font-size: 48px;
+        line-height: 96px;
+        text-align: center;
+    }
+
+    .HeroText{
+        width: 948px;
+        height: 200px;
+        text-align: center;
+        width: 781px;
+        height: 105px;
+       font-size: 18px;
+        line-height: 28px;
+        font-family: 'Gilroy-Medium ☞';
+
+    }
+
+    .SignUpButton{
+        width: 57px;
+        height: 12px;
+        font-family: 'Gilroy-SemiBold ☞';
+        font-size: 16px;
+        line-height: 12px;
+        color: white;
+    }
+
+        
+        .HeroEnding{
+        box-sizing: border-box;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 60px;
+        width: 800px;
+        height: 224px;
+
+        background: rgba(254, 254, 254, 0.1);
+        /* Primary/400 */
+
+        border: 0.5px solid #005AE2;
+        backdrop-filter: blur(106px);
+        border-radius: 24px;
+        }
+
+        .linkCard{
+            width: 1440px;
+            height: 300px;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1099%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(30%2c 52%2c 72%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c402.791C74.004%2c413.018%2c144.256%2c360.208%2c198.436%2c308.772C247.422%2c262.267%2c266.936%2c195.485%2c286.47%2c130.826C303.752%2c73.62%2c306.625%2c15.89%2c304.964%2c-43.847C303.096%2c-111.039%2c323.55%2c-191.621%2c276.178%2c-239.309C228.422%2c-287.383%2c142.707%2c-246.337%2c79.514%2c-270.798C7.113%2c-298.824%2c-38.38%2c-404.877%2c-114.694%2c-390.611C-188.635%2c-376.788%2c-202.408%2c-273.879%2c-242.948%2c-210.516C-277.095%2c-157.146%2c-330.031%2c-111.248%2c-333.894%2c-48.007C-337.678%2c13.954%2c-292.967%2c65.731%2c-263.146%2c120.175C-235.538%2c170.577%2c-205.223%2c216.339%2c-166.062%2c258.398C-115.043%2c313.192%2c-74.164%2c392.541%2c0%2c402.791' fill='%2314222f'%3e%3c/path%3e%3cpath d='M1440 1053.73C1558.501 1048.287 1672.52 1133.2350000000001 1785.8310000000001 1098.124 1911.058 1059.32 2050.379 980.8389999999999 2084.091 854.1469999999999 2118.342 725.4300000000001 1985.3980000000001 614.869 1948.4769999999999 486.892 1918.258 382.144 1950.3600000000001 261.33 1887.391 172.334 1822.309 80.35199999999998 1715.79 16.754999999999995 1604.298 0.45299999999997453 1498.155-15.067000000000007 1399.93 45.12699999999995 1300.995 86.59100000000001 1212.662 123.61200000000002 1127.1770000000001 162.7 1058.321 229.274 984.559 300.591 915.745 381.327 892.737 481.315 868.756 585.534 899.848 690.567 928.466 793.61 961.876 913.908 961.8430000000001 1074.267 1073.132 1130.858 1186.823 1188.671 1312.588 1059.5819999999999 1440 1053.73' fill='%23294661'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1099'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .linkCard span{
+            font-family: 'Gilroy-Bold';
+            font-size: 40px;
+            line-height: 48px;
+            margin-bottom: 40px;
+
+
+        }
+
+        .footer{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 200px;
+            background-position: center;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1440' preserveAspectRatio='none' viewBox='0 0 1440 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1307%26quot%3b)' fill='none'%3e%3crect width='1440' height='1440' x='0' y='0' fill='rgba(255%2c 255%2c 255%2c 0.8)'%3e%3c/rect%3e%3cpath d='M0%2c699.836C129.175%2c701.552%2c245.564%2c614.836%2c335.584%2c522.178C415.15%2c440.28%2c426.648%2c320.315%2c470.957%2c215.079C513.639%2c113.706%2c612.316%2c22.946%2c591.235%2c-85.007C570.149%2c-192.989%2c429.24%2c-227.26%2c366.879%2c-317.902C292.669%2c-425.768%2c306.513%2c-594.352%2c194.348%2c-661.889C81.666%2c-729.738%2c-75.16%2c-714.575%2c-192.187%2c-654.53C-304.319%2c-596.997%2c-322.536%2c-446.186%2c-407.491%2c-353.093C-495.789%2c-256.337%2c-665.552%2c-227.273%2c-697.926%2c-100.347C-730.055%2c25.616%2c-630.007%2c145.696%2c-563.15%2c257.182C-502.531%2c358.266%2c-422.57%2c440.5%2c-329.903%2c513.339C-228.535%2c593.017%2c-128.923%2c698.124%2c0%2c699.836' fill='rgba(242%2c 242%2c 242%2c 0.8)'%3e%3c/path%3e%3cpath d='M1440 2136.69C1567.515 2169.37 1715.845 2104.603 1804.694 2007.475 1890.116 1914.093 1832.2350000000001 1758.141 1889.5140000000001 1645.286 1950.868 1524.402 2149.098 1474.238 2144.091 1338.767 2139.242 1207.569 1962.943 1159.8519999999999 1868.215 1068.95 1783.934 988.073 1731.021 863.28 1617.969 833.893 1505.433 804.64 1396.0720000000001 878.415 1286.662 917.78 1184.058 954.696 1068.887 974.1469999999999 997.9590000000001 1056.97 927.171 1139.629 926.726 1256.426 905.28 1363.119 882.493 1476.483 811.66 1600.3 868.507 1700.992 925.812 1802.495 1085.754 1776.309 1178.45 1846.979 1284.052 1927.489 1311.365 2103.723 1440 2136.69' fill='rgba(255%2c 255%2c 255%2c 0.8)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1307'%3e%3crect width='1440' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+        }
+
+        .footer-left div{
+            display: flex;
+           
+        }
+
+        .icons{
+            display: flex;
+            justify-content: space-between
+        }
+
+
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            padding:90px 180px;
+
+          }
+          .grid-item {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.8);
+          
+            padding: 20px;
+            align-items: start;
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+          }
+
+          .gridfirst{
+          grid-row: span 2;
+          }
+
+          .grid-header{
+            font-size: 16px;
+            font-weight: bold;
+
+          }
+
+          .FAQ{
+            display: flex;
+            flex-direction: column;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1000' height='1000' preserveAspectRatio='none' viewBox='0 0 1000 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1214%26quot%3b)' fill='none'%3e%3crect width='1000' height='1000' x='0' y='0' fill='rgba(249%2c 251%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c428.416C80.601%2c417.97%2c156.032%2c392.944%2c226.464%2c352.385C299.906%2c310.093%2c386.805%2c269.436%2c414.915%2c189.485C442.771%2c110.256%2c376.105%2c30.627%2c369.012%2c-53.056C361.285%2c-144.222%2c431.937%2c-253.216%2c371.566%2c-321.964C311.083%2c-390.839%2c195.269%2c-344.782%2c104.142%2c-354.675C31.449%2c-362.567%2c-39.518%2c-394.108%2c-109.885%2c-374.233C-180.583%2c-354.265%2c-226.942%2c-292.672%2c-283.094%2c-245.302C-350.638%2c-188.321%2c-462.69%2c-155.769%2c-472.897%2c-67.992C-483.17%2c20.346%2c-363.796%2c68.409%2c-329.096%2c150.293C-292.837%2c235.854%2c-338.592%2c356.437%2c-267.616%2c416.419C-198.004%2c475.249%2c-90.385%2c440.13%2c0%2c428.416' fill='%23e0eaff'%3e%3c/path%3e%3cpath d='M1000 1301.465C1068.608 1297.855 1143.3899999999999 1350.19 1201.568 1313.646 1259.687 1277.1390000000001 1241.788 1185.279 1277.891 1126.908 1321.827 1055.872 1441.441 1020.784 1434.171 937.576 1427.045 856.018 1305.356 843.529 1248.025 785.085 1195.76 731.8050000000001 1179.375 647.556 1114.126 611.321 1042.716 571.664 954.707 555.8140000000001 876.277 578.6379999999999 797.7860000000001 601.48 742.096 668.611 692.905 733.9010000000001 646.264 795.806 604.2280000000001 865.292 601.9359999999999 942.767 599.745 1016.833 649.517 1078.603 680.721 1145.81 711.7 1212.534 718.1990000000001 1303.362 784.3240000000001 1335.599 851.1030000000001 1368.155 925.811 1305.368 1000 1301.465' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1214'%3e%3crect width='1000' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+            background-position: left;
+            background-size: cover;
+           align-items: center;
+           margin-bottom: 10px;
+           padding-bottom: 100px;
+          
+
+          }
+          .FAQ-Top{
+            display: flex;
+            
+            padding: 10px;
+
+          }
+          .FAQ-Top img{
+            padding: 10px;
+
+          }
+
+          .accordian-item{
+            width: 792px;
+          
+            font-size: 16px;
+            line-height: 32px;
+            border-bottom-color : #D6D6D6;
+            border-bottom-style:solid;
+          }
+
+          .accordian-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            line-height: 32px;
+
+          }
+
+          .trim-form{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-link {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .more-padding-sides{
+            padding: 0px 20px;
+        }
+
+      
