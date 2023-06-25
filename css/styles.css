@@ -1,3 +1,5 @@
+/* Setting up the giloruy font */
+
 @font-face {
     font-family: 'Gilroy-Bold ☞';
     font-style: normal;
@@ -50,6 +52,8 @@
         scroll-behavior: smooth;
       }
 
+      /* setting the default font for the web page */
+
     body {
         font-family: "Gilroy-Regular ☞";
         color: var(--main-color);
@@ -99,6 +103,7 @@
         color: white;
 
       }
+      
 
       .login{
         display: flex;
@@ -107,7 +112,7 @@
         align-items: center;
        
       }
-      /* To style the try for free button */
+      /* To style the blue button */
       .BlueButton{
         
         background-color:var(--primary-color) ;
@@ -132,7 +137,7 @@
         justify-content: center;
         align-items: center;
     }
-
+/* styling the main text in the hero section */
     .HeroHeader{
        
         width: 948px;
@@ -142,6 +147,8 @@
         line-height: 96px;
         text-align: center;
     }
+
+    /* styling the body texts in the hero section */
 
     .HeroText{
         width: 948px;
@@ -180,10 +187,20 @@
         background: rgba(254, 254, 254, 0.1);
         /* Primary/400 */
 
-        border: 0.5px solid #005AE2;
+        border: 2px solid #005AE2;
         backdrop-filter: blur(106px);
         border-radius: 24px;
         }
+        .rectangle{
+            position: absolute;
+            z-index: -10;
+        }
+
+        .ellipse{
+            display: flex;
+            justify-content:center;
+        }
+
 
         .linkCard{
             width: 1440px;
@@ -204,6 +221,7 @@
 
         }
 
+        /* styling the footer and adding an svg background */
         .footer{
             display: flex;
             justify-content: space-evenly;
@@ -217,13 +235,15 @@
            
         }
 
+        /* arranging the icons at the footer */
+
         .icons{
             display: flex;
             justify-content: space-between
         }
 
 
-
+        /* setting up the grid layout for the footer */
 
         .grid-container {
             display: grid;
@@ -242,6 +262,8 @@
             font-size: 16px;
             line-height: 24px;
           }
+
+          /* making the first element in the footer grid take up the whole first column */
 
           .gridfirst{
           grid-row: span 2;
@@ -294,10 +316,26 @@
 
           }
 
+          .trim{
+            width: 1440px;
+            height: 523px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1440' preserveAspectRatio='none' viewBox='0 0 1440 1440'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1341%26quot%3b)' fill='none'%3e%3crect width='1440' height='1440' x='0' y='0' fill='rgba(30%2c 52%2c 72%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c699.836C129.175%2c701.552%2c245.564%2c614.836%2c335.584%2c522.178C415.15%2c440.28%2c426.648%2c320.315%2c470.957%2c215.079C513.639%2c113.706%2c612.316%2c22.946%2c591.235%2c-85.007C570.149%2c-192.989%2c429.24%2c-227.26%2c366.879%2c-317.902C292.669%2c-425.768%2c306.513%2c-594.352%2c194.348%2c-661.889C81.666%2c-729.738%2c-75.16%2c-714.575%2c-192.187%2c-654.53C-304.319%2c-596.997%2c-322.536%2c-446.186%2c-407.491%2c-353.093C-495.789%2c-256.337%2c-665.552%2c-227.273%2c-697.926%2c-100.347C-730.055%2c25.616%2c-630.007%2c145.696%2c-563.15%2c257.182C-502.531%2c358.266%2c-422.57%2c440.5%2c-329.903%2c513.339C-228.535%2c593.017%2c-128.923%2c698.124%2c0%2c699.836' fill='%231d3144'%3e%3c/path%3e%3cpath d='M1440 2136.69C1567.515 2169.37 1715.845 2104.603 1804.694 2007.475 1890.116 1914.093 1832.2350000000001 1758.141 1889.5140000000001 1645.286 1950.868 1524.402 2149.098 1474.238 2144.091 1338.767 2139.242 1207.569 1962.943 1159.8519999999999 1868.215 1068.95 1783.934 988.073 1731.021 863.28 1617.969 833.893 1505.433 804.64 1396.0720000000001 878.415 1286.662 917.78 1184.058 954.696 1068.887 974.1469999999999 997.9590000000001 1056.97 927.171 1139.629 926.726 1256.426 905.28 1363.119 882.493 1476.483 811.66 1600.3 868.507 1700.992 925.812 1802.495 1085.754 1776.309 1178.45 1846.979 1284.052 1927.489 1311.365 2103.723 1440 2136.69' fill='%2320374c'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1341'%3e%3crect width='1440' height='1440' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+          }
+
+          /* form page to trim the URL */
           .trim-form{
+            width: 476px ;
+            height: 355px;
             display:flex;
             flex-direction: column;
             align-items: center;
+            background-color: #fff;
+            border-radius: 12px;
+            gap: 10px;
         }
 
         .hero-link {
@@ -306,8 +344,40 @@
 
         }
 
+        
+        /* make the element have more padding on the sides */
         .more-padding-sides{
             padding: 0px 20px;
         }
+        /* make the outline of a button blue */
+        
+
+        input[type=text] {
+            border: 2px solid  #005AE2;
+            border-radius: 12px;
+            width: 200px;
+            height: 48px;
+            margin-bottom: 20px;
+            padding: 8px 12px;
+            gap: 10px;
+           
+          }
+
+          input[type=url] {
+            border: 2px solid  #005AE2;
+            border-radius: 12px;
+            width: 392px;
+            height: 55px;
+            margin: 20px 0px;
+            gap: 10px;
+          }
+
+          .trimButton{
+            width: 392px;
+            cursor: pointer;
+            margin: 0 10px;
+          }
+
+
 
       
